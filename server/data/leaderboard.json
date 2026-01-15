@@ -1,0 +1,112 @@
+{
+  "scores": [
+    {
+      "id": "1768436139525",
+      "name": "Brett",
+      "company": null,
+      "score": 0,
+      "spaceshipType": 2,
+      "themeColor": "#ffd43b",
+      "createdAt": "2026-01-15T00:15:39.525Z"
+    },
+    {
+      "id": "1768436172306",
+      "name": "Brett2",
+      "company": "Google",
+      "score": 2,
+      "spaceshipType": 4,
+      "themeColor": "#0099ff",
+      "createdAt": "2026-01-15T00:16:12.306Z"
+    },
+    {
+      "id": "1768436272198",
+      "name": "asdfasdfsdafdsafdsafsdafsdafsdafsadfsadfsdafsafdad",
+      "company": "asfadsfasdfasdfsadfasdfsadfsadfsadfsadfsadfsadfsad",
+      "score": 128,
+      "spaceshipType": 2,
+      "themeColor": "#ffd43b",
+      "createdAt": "2026-01-15T00:17:52.198Z"
+    },
+    {
+      "id": "1768436311183",
+      "name": "mmmmmmmmmmmmmmmmmmmmmmmmm",
+      "company": "mmmmmmmmmmmmmmmmmmmmmmmmm",
+      "score": 4,
+      "spaceshipType": 2,
+      "themeColor": "#ffd43b",
+      "createdAt": "2026-01-15T00:18:31.183Z"
+    },
+    {
+      "id": "1768437042954",
+      "name": "a",
+      "company": null,
+      "score": 20,
+      "spaceshipType": 2,
+      "themeColor": "#ff6b9d",
+      "createdAt": "2026-01-15T00:30:42.954Z"
+    },
+    {
+      "id": "1768437980154",
+      "name": "asd",
+      "company": null,
+      "score": 68,
+      "spaceshipType": 2,
+      "themeColor": "#ff6b9d",
+      "createdAt": "2026-01-15T00:46:20.154Z"
+    },
+    {
+      "id": "1768438124443",
+      "name": "asdasd",
+      "company": null,
+      "score": 4,
+      "spaceshipType": 1,
+      "themeColor": "#0099ff",
+      "createdAt": "2026-01-15T00:48:44.443Z"
+    },
+    {
+      "id": "1768438148822",
+      "name": "asdasdsad",
+      "company": null,
+      "score": 8,
+      "spaceshipType": 2,
+      "themeColor": "#ffd43b",
+      "createdAt": "2026-01-15T00:49:08.822Z"
+    },
+    {
+      "id": "1768438217367",
+      "name": "asdadsad",
+      "company": null,
+      "score": 9,
+      "spaceshipType": 2,
+      "themeColor": "#ffd43b",
+      "createdAt": "2026-01-15T00:50:17.367Z"
+    },
+    {
+      "id": "1768438235245",
+      "name": "f",
+      "company": null,
+      "score": 0,
+      "spaceshipType": 2,
+      "themeColor": "#ffd43b",
+      "createdAt": "2026-01-15T00:50:35.245Z"
+    },
+    {
+      "id": "1768438250698",
+      "name": "a",
+      "company": null,
+      "score": 1,
+      "spaceshipType": 2,
+      "themeColor": "#ffd43b",
+      "createdAt": "2026-01-15T00:50:50.698Z"
+    },
+    {
+      "id": "1768438667864",
+      "name": "Brett",
+      "company": null,
+      "score": 204,
+      "spaceshipType": 2,
+      "themeColor": "#ffd43b",
+      "createdAt": "2026-01-15T00:57:47.864Z"
+    }
+  ]
+}

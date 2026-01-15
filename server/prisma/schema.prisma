@@ -1,0 +1,21 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Score {
+  id            String   @id @default(cuid())
+  name          String
+  company       String?
+  score         Int
+  spaceshipType Int      @default(0)
+  themeColor    String   @default("#00ff00")
+  createdAt     DateTime @default(now())
+}

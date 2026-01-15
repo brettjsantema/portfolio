@@ -1,0 +1,324 @@
+.galaga-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  background: #000000;
+}
+
+.game-over-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.game-over-content {
+  background-color: rgba(0, 0, 0, 0.95);
+  border: 3px solid var(--theme-color);
+  border-radius: 10px;
+  padding: 3rem 4rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.game-over-content h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  color: var(--theme-color);
+  margin-bottom: 2rem;
+  text-shadow: 0 0 20px var(--theme-color);
+}
+
+.final-score {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+.game-over-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.game-over-btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--theme-color);
+  border: 2px solid var(--theme-color);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 3 L12 21 L15 13 L23 10 Z" fill="black" stroke="white" stroke-width="1.5"/></svg>') 0 0, pointer;
+  transition: all 0.3s ease;
+  min-width: 300px;
+}
+
+.game-over-btn:hover {
+  background-color: var(--theme-color);
+  color: #000000;
+  transform: scale(1.05);
+}
+
+.game-over-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.game-over-btn:disabled:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--theme-color);
+}
+
+/* Submit Modal Styles */
+.submit-modal {
+  min-width: 400px;
+}
+
+.submit-form {
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.input-group label {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.6rem;
+  color: var(--theme-color);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.submit-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid var(--theme-color);
+  border-radius: 5px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.submit-input:focus {
+  outline: none;
+  box-shadow: 0 0 10px var(--theme-color);
+}
+
+.submit-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Leaderboard Modal Styles */
+.leaderboard-modal {
+  min-width: 320px;
+  max-width: 400px;
+  padding: 1.5rem 2rem;
+}
+
+.leaderboard-modal h1 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.leaderboard-list {
+  margin-bottom: 0.75rem;
+  min-height: 320px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.leaderboard-entry {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+  margin-bottom: 0.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.leaderboard-rank {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.45rem;
+  color: var(--theme-color);
+  min-width: 28px;
+}
+
+.leaderboard-ship {
+  min-width: 18px;
+}
+
+.mini-spaceship {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mini-spaceship-row {
+  display: flex;
+  gap: 0;
+}
+
+.mini-spaceship-pixel {
+  width: 3px;
+  height: 3px;
+}
+
+.leaderboard-info {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.leaderboard-name {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.4rem;
+  color: #ffffff;
+}
+
+.leaderboard-company {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.35rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.leaderboard-score {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.5rem;
+  color: var(--theme-color);
+  min-width: 40px;
+  text-align: right;
+}
+
+.leaderboard-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.pagination-btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--theme-color);
+  border: 1px solid var(--theme-color);
+  padding: 0.35rem 0.6rem;
+  border-radius: 3px;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 3 L12 21 L15 13 L23 10 Z" fill="black" stroke="white" stroke-width="1.5"/></svg>') 0 0, pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: var(--theme-color);
+  color: #000000;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.4rem;
+  color: #ffffff;
+}
+
+.loading-text,
+.no-scores {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+}
+
+.leaderboard-modal .game-over-buttons {
+  gap: 0.5rem;
+}
+
+.leaderboard-modal .game-over-btn {
+  font-size: 0.5rem;
+  padding: 0.5rem 1rem;
+  min-width: 180px;
+}
+
+@media (max-width: 768px) {
+  .game-over-content {
+    padding: 2rem;
+  }
+
+  .game-over-content h1 {
+    font-size: 1.3rem;
+  }
+
+  .final-score {
+    font-size: 0.9rem;
+  }
+
+  .game-over-btn {
+    font-size: 0.65rem;
+    padding: 0.8rem 1.5rem;
+    min-width: 250px;
+  }
+
+  .submit-modal {
+    min-width: auto;
+    max-width: 90vw;
+    width: 90vw;
+  }
+
+  .leaderboard-modal {
+    min-width: auto;
+    max-width: 90vw;
+    width: 90vw;
+    padding: 1rem 1.5rem;
+  }
+
+  .leaderboard-entry {
+    gap: 0.4rem;
+    padding: 0.3rem 0.4rem;
+  }
+
+  .leaderboard-rank {
+    font-size: 0.4rem;
+    min-width: 24px;
+  }
+
+  .leaderboard-name {
+    font-size: 0.35rem;
+  }
+
+  .leaderboard-company {
+    font-size: 0.3rem;
+  }
+
+  .leaderboard-score {
+    font-size: 0.4rem;
+    min-width: 35px;
+  }
+
+  .leaderboard-modal .game-over-btn {
+    min-width: 150px;
+  }
+}
